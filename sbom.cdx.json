@@ -1,0 +1,194 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:8b0e1fe1-cb99-5181-b129-4761699c7717",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T08:49:32Z",
+  "component": {
+   "type": "application",
+   "name": "PARAMTOOLS",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/PARAMTOOLS@83b357604d34",
+   "purl": "pkg:generic/anticloud/PARAMTOOLS@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "dev",
+   "version": "unspecified",
+   "purl": "pkg:generic/dev",
+   "bom-ref": "conda/dev@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "conda-forge",
+   "version": "unspecified",
+   "purl": "pkg:generic/conda-forge",
+   "bom-ref": "conda/conda-forge@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "dateutil",
+   "version": "unspecified",
+   "purl": "pkg:generic/dateutil",
+   "bom-ref": "conda/dateutil@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "pandas",
+   "version": "unspecified",
+   "purl": "pkg:generic/pandas",
+   "bom-ref": "conda/pandas@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "fsspec",
+   "version": "unspecified",
+   "purl": "pkg:generic/fsspec",
+   "bom-ref": "conda/fsspec@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "pyopenssl",
+   "version": "unspecified",
+   "purl": "pkg:generic/pyopenssl",
+   "bom-ref": "conda/pyopenssl@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "s3fs",
+   "version": "unspecified",
+   "purl": "pkg:generic/s3fs",
+   "bom-ref": "conda/s3fs@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "gcsfs",
+   "version": "unspecified",
+   "purl": "pkg:generic/gcsfs",
+   "bom-ref": "conda/gcsfs@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "requests",
+   "version": "unspecified",
+   "purl": "pkg:generic/requests",
+   "bom-ref": "conda/requests@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "aiohttp",
+   "version": "unspecified",
+   "purl": "pkg:generic/aiohttp",
+   "bom-ref": "conda/aiohttp@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "pip",
+   "version": "unspecified",
+   "purl": "pkg:generic/pip",
+   "bom-ref": "conda/pip@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "pre-commit",
+   "version": "unspecified",
+   "purl": "pkg:generic/pre-commit",
+   "bom-ref": "conda/pre-commit@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "black",
+   "version": "unspecified",
+   "purl": "pkg:generic/black",
+   "bom-ref": "conda/black@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "flake8",
+   "version": "unspecified",
+   "purl": "pkg:generic/flake8",
+   "bom-ref": "conda/flake8@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "jupyter-book",
+   "version": "unspecified",
+   "purl": "pkg:generic/jupyter-book",
+   "bom-ref": "conda/jupyter-book@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "sphinx",
+   "version": "unspecified",
+   "purl": "pkg:generic/sphinx",
+   "bom-ref": "conda/sphinx@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "autodoc",
+   "version": "unspecified",
+   "purl": "pkg:generic/autodoc",
+   "bom-ref": "conda/autodoc@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "ghp-import",
+   "version": "unspecified",
+   "purl": "pkg:generic/ghp-import",
+   "bom-ref": "conda/ghp-import@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "sortedcontainers",
+   "version": "unspecified",
+   "purl": "pkg:generic/sortedcontainers",
+   "bom-ref": "conda/sortedcontainers@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "marshmallow",
+   "version": ">=4.0.0",
+   "purl": "pkg:pypi/marshmallow@4.0.0",
+   "bom-ref": "pypi/marshmallow@>=4.0.0"
+  },
+  {
+   "type": "library",
+   "name": "python-dateutil",
+   "version": ">=2.8.0",
+   "purl": "pkg:pypi/python-dateutil@2.8.0",
+   "bom-ref": "pypi/python-dateutil@>=2.8.0"
+  }
+ ],
+ "source": {
+  "git": {
+   "head": null,
+   "url": null,
+   "sha_unverified": true,
+   "note": "contamination removed; resolve via GitHub API before quoting"
+  }
+ }
+}
