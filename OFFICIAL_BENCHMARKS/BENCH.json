@@ -1,0 +1,515 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "PARAMTOOLS",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\ARCHITECTURAL_DESIGN\\PARAMTOOLS\\UPSTREAM_CLONE",
+    "git": {
+      "head": "",
+      "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+      "branch": "master",
+      "committed_at": "2026-09-29T11:06:59+04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 57,
+    "source_files_scanned": 26,
+    "lines_of_code": 7484,
+    "languages": {
+      ".py": 27,
+      ".json": 7,
+      ".ipynb": 6,
+      ".yml": 4,
+      ".md": 4,
+      ".yaml": 2,
+      "(none)": 1,
+      ".txt": 1,
+      ".in": 1,
+      ".toml": 1,
+      ".rst": 1,
+      ".bat": 1,
+      ".sh": 1
+    }
+  },
+  "licence": {
+    "spdx": "MIT",
+    "class": "A",
+    "source_file": "LICENSE.txt",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 22,
+    "unique": 21,
+    "by_ecosystem": {
+      "conda": 20,
+      "pypi": 2
+    },
+    "list": [
+      {
+        "ecosystem": "conda",
+        "name": "dev",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "-dev"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "conda-forge",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- conda-forge"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "dateutil",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "-dateutil"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pandas",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pandas"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "fsspec",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- fsspec"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pyopenssl",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pyopenssl"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "s3fs",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- s3fs"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "gcsfs",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- gcsfs"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "requests",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- requests"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "aiohttp",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- aiohttp"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pip",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pip"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pip",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pip"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pre-commit",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pre-commit"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "black",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- black"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "flake8",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- flake8"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "jupyter-book",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- jupyter-book"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "sphinx",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- sphinx"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "autodoc",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- autodoc"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "ghp-import",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- ghp-import"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "sortedcontainers",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- sortedcontainers"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "marshmallow",
+        "version": ">=4.0.0",
+        "source_file": "setup.py",
+        "raw": "marshmallow>=4.0.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "python-dateutil",
+        "version": ">=2.8.0",
+        "source_file": "setup.py",
+        "raw": "python-dateutil>=2.8.0"
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 3,
+    "files_with_findings": 3,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 3
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 0,
+        "findings": []
+      },
+      "A04-InsecureDesign": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "paramtools/schema_factory.py",
+            "line": 65,
+            "cwe": "CWE-",
+            "snippet": "# TODO: what about case where number_dims > 0"
+          },
+          {
+            "severity": "low",
+            "file": "paramtools/values.py",
+            "line": 257,
+            "cwe": "CWE-",
+            "snippet": "# TODO: remove existing values with clashing index"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "paramtools/tests/test_utils.py",
+            "line": 89,
+            "cwe": "CWE-319",
+            "snippet": "\"\"\"test strips comment but doesn't affect http://...\"\"\""
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 0,
+    "files_with_findings": 0,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:8b0e1fe1-cb99-5181-b129-4761699c7717",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-06T07:03:28Z",
+      "component": {
+        "type": "application",
+        "name": "PARAMTOOLS",
+        "version": "83b357604d34",
+        "bom-ref": "pkg:generic/anticloud/PARAMTOOLS@83b357604d34",
+        "purl": "pkg:generic/anticloud/PARAMTOOLS@83b357604d34",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": ""
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "dev",
+        "version": "unspecified",
+        "purl": "pkg:generic/dev",
+        "bom-ref": "conda/dev@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "conda-forge",
+        "version": "unspecified",
+        "purl": "pkg:generic/conda-forge",
+        "bom-ref": "conda/conda-forge@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "dateutil",
+        "version": "unspecified",
+        "purl": "pkg:generic/dateutil",
+        "bom-ref": "conda/dateutil@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pandas",
+        "version": "unspecified",
+        "purl": "pkg:generic/pandas",
+        "bom-ref": "conda/pandas@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "fsspec",
+        "version": "unspecified",
+        "purl": "pkg:generic/fsspec",
+        "bom-ref": "conda/fsspec@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pyopenssl",
+        "version": "unspecified",
+        "purl": "pkg:generic/pyopenssl",
+        "bom-ref": "conda/pyopenssl@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "s3fs",
+        "version": "unspecified",
+        "purl": "pkg:generic/s3fs",
+        "bom-ref": "conda/s3fs@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "gcsfs",
+        "version": "unspecified",
+        "purl": "pkg:generic/gcsfs",
+        "bom-ref": "conda/gcsfs@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "requests",
+        "version": "unspecified",
+        "purl": "pkg:generic/requests",
+        "bom-ref": "conda/requests@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "aiohttp",
+        "version": "unspecified",
+        "purl": "pkg:generic/aiohttp",
+        "bom-ref": "conda/aiohttp@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pip",
+        "version": "unspecified",
+        "purl": "pkg:generic/pip",
+        "bom-ref": "conda/pip@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pre-commit",
+        "version": "unspecified",
+        "purl": "pkg:generic/pre-commit",
+        "bom-ref": "conda/pre-commit@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "black",
+        "version": "unspecified",
+        "purl": "pkg:generic/black",
+        "bom-ref": "conda/black@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "flake8",
+        "version": "unspecified",
+        "purl": "pkg:generic/flake8",
+        "bom-ref": "conda/flake8@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "jupyter-book",
+        "version": "unspecified",
+        "purl": "pkg:generic/jupyter-book",
+        "bom-ref": "conda/jupyter-book@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "sphinx",
+        "version": "unspecified",
+        "purl": "pkg:generic/sphinx",
+        "bom-ref": "conda/sphinx@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "autodoc",
+        "version": "unspecified",
+        "purl": "pkg:generic/autodoc",
+        "bom-ref": "conda/autodoc@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "ghp-import",
+        "version": "unspecified",
+        "purl": "pkg:generic/ghp-import",
+        "bom-ref": "conda/ghp-import@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "sortedcontainers",
+        "version": "unspecified",
+        "purl": "pkg:generic/sortedcontainers",
+        "bom-ref": "conda/sortedcontainers@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "marshmallow",
+        "version": ">=4.0.0",
+        "purl": "pkg:pypi/marshmallow@4.0.0",
+        "bom-ref": "pypi/marshmallow@>=4.0.0"
+      },
+      {
+        "type": "library",
+        "name": "python-dateutil",
+        "version": ">=2.8.0",
+        "purl": "pkg:pypi/python-dateutil@2.8.0",
+        "bom-ref": "pypi/python-dateutil@>=2.8.0"
+      }
+    ]
+  },
+  "elapsed_seconds": 4.05
+}
